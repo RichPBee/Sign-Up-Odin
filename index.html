@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="validation.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="image-section">
+        <div class="logo-header">
+            <img src="./odin-lined.png"/>
+            <h1 class="header">ODIN</h1>
+        </div>
+        <img src="./halie-west-25xggax4bSA-unsplash.jpg"/>
+    </div>
+
+    <div class="content-section">
+        <div class="top-text">
+            <p class="content-text">I have absolutely no idea what to write in this section.
+                Enjoy using this pretend service, even though the sign-up form doesn't actually
+                go anywhere...
+            </p>
+        </div>
+        <form class="sign-up" action="#" method="post">
+            <legend>Let's do this!</legend>
+
+            <div class="form-elements">
+
+                <label for="first_name">First Name</label>
+                <input type="text" name="first_name" id="first_name" minlength="2" pattern="^[a-zA-z]+$"/>
+    
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"/>
+    
+                <label for="password">Password*</label>
+                <input type="password" name="password" id="password" autocomplete="off" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+
+                <label for="last_name">Last Name</label>
+                <input type="text" name="last_name" id="last_name" minlength="2" pattern="^[a-zA-z]+$"/>
+
+                <label for="number">Phone Number</label>
+                <input type="text" name="phone_number" id="phone_number">
+    
+                <label for="confirm_password">Confirm password*</label>
+                <input type="password" name="confirm_password" id="confirm_password" autocomplete="off" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+    
+            </div>
+
+            <div class="bottom-section">
+                <button type="submit" class="submit">Create Account</button>
+                <div class="login-text">
+                    <h5>Already have an account?</h5>
+                    <a class="log-in" href="./">Log in</a>
+                </div>
+    
+            </div>
+           
+        </form>
+       
+
+    </div>
+</body>
+</html>
